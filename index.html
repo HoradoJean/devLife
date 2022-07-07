@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Idle ${Code}</title>
+</head>
+<body>
+    <nav>
+        <h1>Idle Code</h1>
+        <hr>
+        <button class="nav-btn">
+            <img src="./img/icons/pc-icon.png" class="icon">
+            <a href="#pc">
+                PC
+            </a>
+            <p class="new">+1</p>
+        </button>
+        <button class="nav-btn">
+            <img src="./img/icons/shop-icon.png" class="icon">
+            <a href="#shop">
+                SHOP
+            </a>
+            <p class="new">+1</p>
+        </button>
+        <button class="nav-btn">
+            <img src="./img/icons/upgrades-icon.png" class="icon">
+            <a href="#upgrades">
+                UPGRADES
+            </a>
+            <p class="new">+3</p>
+        </button>
+        <button class="nav-btn">
+            <img src="./img/icons/achievements-icon.png" class="icon">
+            <a href="#achievements">
+                ACHIEVEMENTS
+            </a>
+            <p class="new"></p>
+        </button>
+        <button class="nav-btn">
+            <img src="./img/icons/bet-icon.png" class="icon">
+            <a href="#bet">
+                BET
+            </a>
+            <p class="new"></p>
+        </button>
+        <button class="nav-btn">
+            <img src="./img/icons/options-icon.png" class="icon">
+            <a href="#options">
+                OPTIONS
+            </a>
+            <p class="new"></p>
+        </button>
+
+        <div id="bottom">
+            <div id="level">
+                <p>25 lvl</p>
+            </div>
+            <button id="cash">
+                &euro; 00
+            </button>
+        </div>
+        
+    </nav>
+    
+    <div id="display">
+
+        <div class="menu" id="pc">
+            <img src="./img/pc.png" id="computer" onclick="game.click()">
+        </div>
+        <div class="menu" id="shop">
+            <h1>SHOP</h1>
+        </div>
+        <div class="menu" id="upgrades">
+            <h1>UPGRADES</h1>
+        </div>
+        <div class="menu" id="bet">
+            <h1>BET</h1>
+        </div>
+        <div class="menu" id="achievements">
+            <h1>ACHIEVEMENTS</h1>
+        </div>
+        
+        <div class="menu" id="options">
+            <h1>OPTIONS</h1>
+
+            <div id="themes">
+                <button onclick="game.changeTheme('light')">
+                    Light
+                </button>
+                <button onclick="game.changeTheme('dark')">
+                    Dark
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
